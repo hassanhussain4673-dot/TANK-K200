@@ -57,7 +57,7 @@ jobs:
                   ImageDraw.Draw(m).ellipse((0, 0, v-1, v-1), fill=255)
                   rr = r.copy(); rr.putalpha(m)
                   rr.save(f'{d}/ic_launcher_round.png')
-          EOF
+            EOF
 
       - name: Sync web assets
         run: npx cap sync android
